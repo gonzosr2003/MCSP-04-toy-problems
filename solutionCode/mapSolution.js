@@ -2,8 +2,8 @@
 
 // As input, map takes two parameters.
 
-// An array
-// A function
+// An array,
+// A function,
 // As output, map creates a new array with the results of calling
 // a provided function on every element in the calling array.
 
