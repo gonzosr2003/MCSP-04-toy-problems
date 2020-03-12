@@ -12,4 +12,22 @@
 
 var evenOccurrence = function(arr) {
   // Your work here!
-};
+  //create a count obj
+  var count = {};
+  // look at array in single elements and count occurence at value
+  array.forEach(function(value, index) {
+    // define how to count
+    count[value] = count[value] + 1;
+ })
+  // iterate thru arr
+  for (var i = 0; i < arr.length; i++) {
+  // get baseline at iteration
+    var baseline = arr[i];
+  // compare 
+  if (storage[baseline] % 2 === 0) {
+    console.log(storage[baseline]);
+  }
+   // if no even occurrence return null
+    return null;
+  }
+  }

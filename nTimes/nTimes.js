@@ -30,5 +30,19 @@
   
 var nTimes = function(n, func) {
   // TODO: Your work here!
+  var nTimes = function(n, func) {
+    var result;
+    return function() {
+        if (n > 0) {
+            result = func.apply(this, arguments);
+            n--;
+        }
+      return result;
+    }
+ }
+ var add = function(a, b) {
+     return a + b;
+ }
+var add3Times = nTimes(3, add);
 }
 

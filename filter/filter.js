@@ -25,4 +25,13 @@
 
 function filter(array, func) {
   // Your work here!
-}
+    var returnArr = [];
+     if(array.length === 0) {
+        return [];
+    }
+     for (var i = 0; i < array.length; i++) {
+       if (func(array[i]) === true) {
+         returnArr.push(array[i]);
+       } 
+     } return returnArr;
+   };

@@ -15,4 +15,7 @@
 
 function replicate(times, number) {
   // Your work here!
-}
+  if (times <= 0 ) {
+    return [];
+    } return [number].concat(replicate(times - 1,  number));
+    }
