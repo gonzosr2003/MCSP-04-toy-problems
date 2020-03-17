@@ -6,9 +6,10 @@
 
 /*
  * example usage:
- * var onlyEven = evenOccurrence([1, 7, 2, 4, 5, 6, 8, 9, 6, 4]);
+ 
  * console.log(onlyEven); //  4
  */
+var onlyEven = evenOccurrence([1, 7, 2, 4, 5, 6, 8, 9, 6, 4]);
 
 var evenOccurrence = function(arr) {
   // Your work here!
@@ -31,3 +32,4 @@ var evenOccurrence = function(arr) {
     return null;
   }
   }
+  console.log(onlyEven)
