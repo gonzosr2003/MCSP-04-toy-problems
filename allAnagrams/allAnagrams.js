@@ -14,4 +14,13 @@
 
 var allAnagrams = function(string) {
   // Your code here.
+  // make a recurison method
+  function NeedMoreOfficeHoursOnRecursion () {
+    // iterate over string
+    for (var i = 0; i < string.length; i++) {
+      // inital letter + next
+      // 
+    }
+  }
 };
+// The substr() method extracts parts of a string, beginning at the character at the specified position, and returns the specified number of characters.
