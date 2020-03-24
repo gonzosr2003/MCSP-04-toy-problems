@@ -7,4 +7,23 @@
 // "mississippi" => [ [ "i", 4 ], [ "s", 4 ], [ "p", 2 ], [ "m", 1 ] ]
 // "" => [ ]
 
-function characterFrequency() {}
+function characterFrequency(string) {
+    let singleElement = string.split(''); //breakdown string
+    let storage = []; // ascending by character
+    let count = 0; 
+    let tempHold = []; //compare and hold elements
+        //iterate over length
+        for(var i = 0; i < singleElement.length; i++) {
+            // 
+            let valueOf = tempHold.indexOf(singleElement[i]);
+            if (valueOf === 0) {
+                // start counting frequency of element
+                tempHold[count] = singleElement[i];
+                // add to element count
+                count += 1
+                console.log(count);
+            }
+            // 
+        }
+
+}

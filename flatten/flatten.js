@@ -4,5 +4,12 @@
 // flatten([1,['a', 2, [8, true], 7]]) returns [1, 'a', 2, 8, true, 7]
 
 function flatten(array) {
-    return array.flat();
+   let newArray =array.reduce(function(accumulator, currentValue) {
+       return accumulator.concat(currentValue)
+   },[])
 }
+
+// reduce taking in an cb function using acc and current val of array
+// should return acc(starting element) and combine with each el in array
+//
+flatten([1,['a', 2, [8, true], 7]])
