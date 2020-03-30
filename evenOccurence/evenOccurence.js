@@ -9,27 +9,28 @@
  
  * console.log(onlyEven); //  4
  */
-var onlyEven = evenOccurrence([1, 7, 2, 4, 5, 6, 8, 9, 6, 4]);
+// var onlyEven = evenOccurrence([1, 7, 2, 4, 5, 6, 8, 9, 6, 4]);
 
-var evenOccurrence = function(arr) {
-  // Your work here!
-  //create a count obj
-  var count = {};
-  // look at array in single elements and count occurence at value
-  array.forEach(function(value, index) {
-    // define how to count
-    count[value] = count[value] + 1;
- })
-  // iterate thru arr
-  for (var i = 0; i < arr.length; i++) {
-  // get baseline at iteration
-    var baseline = arr[i];
-  // compare 
-  if (storage[baseline] % 2 === 0) {
-    console.log(storage[baseline]);
-  }
-   // if no even occurrence return null
+var evenOccurrence = function(array) {
+    // create a count obj
+    var count = {};
+    // get each element(forEach method)
+    array.forEach(function(value, index) {
+      // Store each value within the object to keep count
+      count[value] = count[value] + 1 || 1;
+    });
+    // loop through input array 
+    for (var i = 0; i < array.length; i++) {
+      //find first occurence of an even count
+      var current = array[i];
+      // Check to see if the current character inside storage is even
+      if (count[current] % 2 === 0) {
+        //return current character
+        return current;
+      }
+    }
+    // If no even occurrence found, return null
     return null;
-  }
-  }
-  console.log(onlyEven)
+}
+  var onlyEven = evenOccurrence([1, 7, 2, 4, 5, 6, 8, 9, 6, 4]);
+  console.log(onlyEven = evenOccurrence([1, 7, 2, 4, 5, 6, 8, 9, 6, 4]))
