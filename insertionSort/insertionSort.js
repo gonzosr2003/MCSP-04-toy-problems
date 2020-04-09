@@ -49,3 +49,8 @@ var insertionSort = function(array) {
   // Your code goes here. Feel free to add helper functions if needed.
   return array;
 };
+
+// I - array
+// O - sorted array of obj by value AND order
+// C - 
+// E - array length is empty, obj value same but no order for 1  {value: 10}, {value: 10, order: 1}] 

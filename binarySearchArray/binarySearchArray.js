@@ -17,11 +17,15 @@ var binarySearch = function(array, target) {
         //high index //4
     let high = array.length - 1;
     // if low is less than high
-    if(low < high)
+    while(low < high)
         //where is the middle index?
             // create var for middle
                 // array length / 2
+        let middle = Math.floor((low + high) / 2);
     //if element at middle var is target
+        if (middle === target) {
+            return middle;
+        }
     // yes - return middle
     // no - find out which side of array to continue search
     // if key is less than mid
