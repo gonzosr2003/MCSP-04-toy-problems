@@ -23,4 +23,24 @@
 
 Array.prototype.isSubsetOf = function(arr) {
   // your code here
+  // iterate over array
+  for ( var i = 0; i < arr.length; i++) {
+    // if array is equal to var array
+      // how do we iterate over var that subset is being called on?
+        helper function 
+      if (arr[i] ==== ???) {
+      // return true
+      return true;
+    }
+  }
+        // else return false
+        
+        // NOT DONE AT ALL
+  
 };
+
+// I - array
+// O - boolean
+// C - disregard duplicates
+// E - empty set, neither array not contain obj or elements
+
