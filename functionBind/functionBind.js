@@ -25,6 +25,14 @@
 
 var bind = function() {
   // TODO: Your code here
+  // referencing examples to psuedo
+
+  // 12/19 takes in a function and/or item (obj, var)
+  // 
+  // lines 20/21 concats function w item "bar"
+  // return function
+  // keep passing info into next var. 
+    // this (function prototype below?)
 };
 
 /*
@@ -54,4 +62,6 @@ var bind = function() {
 
 Function.prototype.bind = function() {
   // TODO: Your code here
+  // function object or item is set to .this
+   // code will be same as function bind above besides the .this assignment 
 };
