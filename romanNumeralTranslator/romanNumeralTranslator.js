@@ -28,4 +28,40 @@ var DIGIT_VALUES = {
 
 var translateRomanNumeral = function(romanNumeral) {
   // TODO: Implement me!
+  // create a total var initilize at 0
+  let total = 0;
+  // split the roman numeral (gives an array)
+  let normal = romanNumeral.split('');
+  // iterate ovet the array 
+  for (let i = 0; i < normal.length; i++) {
+    // create a current var to keep track of array length
+    let currentIndex = normal[i];
+    // use Digit Value for current idex
+    let currentVal = DIGIT_VALUES[currentIndex];
+    // create a next var for next index if applicable
+    let nextIndex = normal[i + 1];
+    // convert next to a value using Digit Value
+    let nextVal = DIGIT_VALUES[nextIndex];
+  // compare
+    // if current is less than next
+      // total is subtract/equal of the 2 values
+     if (currentVal < nextVal) {
+      total = currentVal - nextVal;
+    } else {
+      // if current is greater then next
+      // total is add/equal of the 2 values
+       total = currentVal + nextVal;
+    } 
+  }
+  // return total
+return total;
 };
+
+// I- roman numeral
+// O- return number equal to roman numeral (+ / -)
+// C-
+// E- if RN is not a string return null
+
+// tried console log saying undefined....
+
+console.log(DIGIT_VALUES(I))
