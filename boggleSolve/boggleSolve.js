@@ -7,7 +7,7 @@ const boggleSolve = str => {
     // create total var
     let sum = 0;
     // split str 
-    const strValue = str.split.(' ');
+    const strValue = str.split(' ');
     // assign value
     let a = 1;
     let b = 2;
@@ -36,7 +36,7 @@ const boggleSolve = str => {
     let y = 25;
     let z = 26;
     // iterate over str
-    for (let i = 0; i < strValue.lenght; i++) {
+    for (let i = 0; i < strValue.length; i++) {
         let curIndex = strValue[i];
         // each index together
         sum += curIndex
